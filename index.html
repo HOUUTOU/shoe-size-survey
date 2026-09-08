@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142c40"><meta name="description" content="開発サンプルのサイズ選定に向けた社内アンケート。">
+<title>靴のサイズ調査 | Size Study</title>
+<link rel="stylesheet" href="premium.css">
+</head><body><div class="shell">
+<header class="brand"><div class="wordmark"><span class="brand-mark" aria-hidden="true">S</span>SIZE STUDY</div><div class="brand-meta"><small>FOOTWEAR DEVELOPMENT</small></div></header>
+<main><section class="intro"><div class="intro-top"><p class="kicker">社内アンケート</p><h1>あなたに合う、<br>靴のサイズを。</h1><p class="description">より多くの方に試着いただけるよう、<br>開発サンプルのサイズ選びにご協力ください。</p></div><div class="intro-bottom"><div class="unit-display" aria-hidden="true"><span class="cm">cm</span><span class="unit-caption">JAPAN<br>SIZE STANDARD</span></div><div class="rule"></div><p class="micro">4項目<span>/</span>約30秒で完了</p></div></section>
+<section class="form-surface"><div id="notice" class="message" role="status" aria-live="polite" hidden></div>
+<form id="survey"><div class="form-head"><div><p class="form-eyebrow">Your profile</p><h2>基本情報</h2></div><small>すべて必須</small></div>
+<div class="field"><label for="name">お名前<span class="en">Name</span></label><input id="name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="氏名を入力"></div>
+<div class="row"><div class="field"><label for="gender">性別<span class="en">Gender</span></label><select id="gender" name="gender" required><option value="">選択</option><option value="female">女性</option><option value="male">男性</option><option value="other">その他</option><option value="undisclosed">回答しない</option></select></div><div class="field"><label for="age">年齢<span class="en">Age</span></label><input id="age" name="age" type="number" required min="1" max="120" step="1" inputmode="numeric" placeholder="歳"></div></div>
+<div class="field size-field"><label for="size">靴のサイズ<span class="en">Size / cm</span></label><select id="size" name="size" required><option value="">選択してください</option></select><input id="otherSize" type="number" min="15" max="40" step="0.1" inputmode="decimal" aria-label="その他の靴のサイズ（cm）" placeholder="サイズをcmで入力" style="margin-top:10px" hidden disabled><small class="hint">普段、最も足に合うスニーカーの表示サイズを選択してください。<br>足の実測値ではなく、cm表記のサイズをご回答ください。</small></div>
+<div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+<button class="submit" id="submit" type="submit">回答を送信する</button><p class="privacy">回答はサンプルサイズの選定および試着のご相談に使用し、担当者が管理します。お一人につき1回ご回答ください。</p></form>
+<div class="success-card" id="success" hidden><p class="kicker">THANK YOU</p><h2>回答を保存しました。</h2><p>ご協力ありがとうございます。<br>この画面を閉じていただいて構いません。</p><p class="receipt" id="receipt"></p><button class="secondary" id="next" type="button">次の方が回答する</button></div>
+</section></main><footer><span>サイズ選定のための社内調査</span><span class="footer-right">JAPAN / CENTIMETERS</span></footer></div>
+<script src="config.js"></script><script src="app.js"></script></body></html>
